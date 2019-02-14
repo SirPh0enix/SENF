@@ -22,5 +22,11 @@ client.on('message', message => {
     	message.channel.send('Der Owner ist Schwenn aka SHD');
   	}
  });
+
+client.on('message', message => {
+    if (message.content === 'senf') {
+    	message.channel.send('Ich schmecke mit Bratwurst sehr lecker.');
+  	}
+ });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
